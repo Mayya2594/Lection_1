@@ -29,7 +29,7 @@ int IndexOf(int[] collection, int find)
 {
     int count = collection.Length;
     int index = 0;
-    int position = 0;
+    int position = -1; // если в массиве не будет совпадения, то выведется позиция -1
 
     while(index < count);
     {
@@ -48,5 +48,5 @@ FillArray(array);
 PrintArray(array);
 Console.WriteLine();
 
-int pos = IndexOf(array, 4);
+int pos = IndexOf(array, 1);
 Console.WriteLine(pos);
