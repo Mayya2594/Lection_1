@@ -3,10 +3,6 @@
 // маленькие буквы "К" заменить большими "К",
 // а большие "С" заменить маленькими "С".
 
-string text = "- Я думаю, - сказал князь, улыбаясь, -что,"
-            + "ежели бы вас послали вместо нашего милого Винцеегероде,"
-            + "вы бы взяли пристопом согласие прусского короля."
-            + "Вы так красноречивы. Вы дадите мне чаю?"
 
 // string s = "qwerty"
 //             012345
@@ -14,7 +10,7 @@ string text = "- Я думаю, - сказал князь, улыбаясь, -ч
 
 string Replace(string text, char oldValue, char newValue)
 {
-    string result = string.Empty;
+    string result = String.Empty;
 
     int length = text.Length;
     for (int i = 0; i < length; i++)
@@ -25,5 +21,10 @@ string Replace(string text, char oldValue, char newValue)
 
     return result;
 }
+
+string text = "- Я думаю, - сказал князь, улыбаясь, -что,"
+            + "ежели бы вас послали вместо нашего милого Винцеегероде,"
+            + "вы бы взяли пристопом согласие прусского короля."
+            + "Вы так красноречивы. Вы дадите мне чаю?";
 
 string newText = Replace(text,' ', '|');
